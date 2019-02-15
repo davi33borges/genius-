@@ -1,0 +1,89 @@
+.grid{
+    justify-content: center;
+    background-color: black;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas: 
+    ". verde verde ."
+    "amarelo genius genius vermelho"
+    "amarelo genius genius vermelho"
+    ". azul azul .";
+    height: 75vh;
+    width:75vh;
+    border-radius: 120px;
+
+  
+}
+
+body{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+header{
+    font-size: 30pt;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: blue;
+}
+
+
+.verde{
+    background-color: green;
+    grid-area: verde;
+    opacity: 0.3;
+}
+
+.amarelo{
+    background-color: yellow;
+    grid-area: amarelo;
+    opacity: 0.3;
+
+}
+
+.vermelho{
+    background-color: red;
+    grid-area: vermelho;
+    opacity: 0.3;
+
+}
+
+.azul{
+    background-color: blue;
+    grid-area: azul;
+    opacity: 0.3;
+    
+}
+
+.genius{
+    grid-area: genius;
+
+}
+
+/*=============== TAGS PARA JAVASCRIPT ===============*/
+
+.verdeJS{
+    background-color: green;
+    grid-area: verde;
+    opacity: 1;
+}
+
+.amareloJS{
+    background-color: yellow;
+    grid-area: amarelo;
+    opacity: 1;
+}
+
+.vermelhoJS{
+    background-color: red;
+    grid-area: vermelho;
+    opacity: 1;
+}
+
+.azulJS{
+    background-color: blue;
+    grid-area: azul;
+    opacity: 1;
+}
