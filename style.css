@@ -59,6 +59,10 @@ header{
 
 .genius{
     grid-area: genius;
+    background-image:url("iconestart.png");
+    background-size: cover;
+    width: 235px;
+    height: 235px;
 
 }
 
