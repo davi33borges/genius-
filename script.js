@@ -14,9 +14,9 @@ const piscar = function(){
         // console.log(value);
         if(value == "amareloJS"){
             amarelo.classList.toggle(value);
-            delay(1000);
-            amarelo.classList.toggle(value);
-            delay(1000);
+            setTimeout(function () {
+                amarelo.classList.toggle(value);
+            }, 1000)
         }
         else if(value == "azulJS"){
             azul.classList.toggle(value);
