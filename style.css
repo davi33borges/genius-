@@ -34,12 +34,14 @@ header{
     background-color: green;
     grid-area: verde;
     opacity: 0.3;
+    cursor: pointer;
 }
 
 .amarelo{
     background-color: yellow;
     grid-area: amarelo;
     opacity: 0.3;
+    cursor: pointer;
 
 }
 
@@ -47,6 +49,7 @@ header{
     background-color: red;
     grid-area: vermelho;
     opacity: 0.3;
+    cursor: pointer;
 
 }
 
@@ -54,6 +57,7 @@ header{
     background-color: blue;
     grid-area: azul;
     opacity: 0.3;
+    cursor: pointer;
     
 }
 
@@ -61,8 +65,7 @@ header{
     grid-area: genius;
     background-image:url("iconestart.png");
     background-size: cover;
-    width: 235px;
-    height: 235px;
+    cursor: pointer;
 
 }
 
