@@ -28,6 +28,8 @@ header{
     font-family: 'Ultra';
     font-weight: bold;
     color: blue;
+    background-image: url(joystick.png);
+    margin: 20px;
     }
 
 
