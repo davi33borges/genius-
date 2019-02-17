@@ -25,9 +25,11 @@ body{
 
 header{
     font-size: 30pt;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Ultra';
+    font-weight: bold;
     color: blue;
-}
+    }
+
 
 
 .verde{
@@ -35,6 +37,10 @@ header{
     grid-area: verde;
     opacity: 0.3;
     cursor: pointer;
+}
+
+.verde:hover{
+    opacity: 0.7;
 }
 
 .amarelo{
@@ -45,29 +51,48 @@ header{
 
 }
 
+.amarelo:hover{
+    opacity: 0.7;}
+
 .vermelho{
     background-color: red;
     grid-area: vermelho;
     opacity: 0.3;
     cursor: pointer;
-
 }
+
+.vermelho:hover{
+    opacity: 0.7;}
 
 .azul{
     background-color: blue;
     grid-area: azul;
     opacity: 0.3;
     cursor: pointer;
-    
-}
+    }
+
+.azul:hover{
+    opacity: 0.7;}
 
 .genius{
     grid-area: genius;
     background-image:url("iconestart.png");
     background-size: cover;
-    cursor: pointer;
+    cursor:pointer;
+    opacity: 0.3;
 
 }
+
+
+.genius:hover{
+    opacity: 1.0;}
+    
+
+
+
+
+
+
 
 /*=============== TAGS PARA JAVASCRIPT ===============*/
 

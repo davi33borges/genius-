@@ -7,57 +7,62 @@ let ordemCores = [];
 let comando = [];
 let coresClique = [];
 let i = 0;
+
 let init = 0;
 const iniciador = function() {
     init = 1;
     return init
 
 }
-let aleatorio = function(min,max){
-    return number = Math.floor(Math.random() * max);
 
-}
-const piscaVermelho = function(){
-    vermelho.classList.toggle("vermelhoJS");
-    setTimeout(function(){vermelho.classList.toggle("vermelhoJS")},1000);
 
+function aleatorio (min, max) {
+    return Math.floor (math.random()*(min, max)) + min;
 }
-const piscaVerde = function(){
-    verde.classList.toggle("verdeJS");
-    setTimeout(function(){verde.classList.toggle("verdeJS")},1000);
+// let aleatorio = function(min,max){
+//     return number = Math.floor(Math.random() * max);
 
-}
+// }
 const piscaAmarelo = function(){
-    amarelo.classList.toggle("amareloJS");
-    setTimeout(function(){amarelo.classList.toggle("amareloJS")},1000);
+    vermelho.classList.toggle("amareloJS");
+    setTimeout(function(){vermelho.classList.toggle("amareloJS")},1000);
 
 }
 const piscaAzul = function(){
-    azul.classList.toggle("azulJS");
-    setTimeout(function(){azul.classList.toggle("azulJS")},1000);
+    verde.classList.toggle("azulJS");
+    setTimeout(function(){verde.classList.toggle("azulJS")},1000);
+
+}
+const piscaVermelho = function(){
+    amarelo.classList.toggle("vermelhoJS");
+    setTimeout(function(){amarelo.classList.toggle("vermelhoJS")},1000);
+
+}
+const piscaVerde = function(){
+    azul.classList.toggle("verdeJS");
+    setTimeout(function(){azul.classList.toggle("verdeJS")},1000);
 
 }
 const declararCor = function(number){
-    if(5 > number && number >= 0){
-        ordemCores.push("vermelhoJS");
+    if(number && number >= 0){
+        ordemCores.push("amareloJS");
         setTimeout(piscaVermelho()
-        ,i*1000);
-        console.log('vermelho');
-    };
-    if(10 > number && number >= 5){
-        console.log("azul");
-        ordemCores.push("azulJS")
-        setTimeout(piscaAzul()
-        ,i*1000);
-        
-    };
-    if(15 > number && number >= 10){
-        ordemCores.push("amareloJS")
-        setTimeout(piscaAmarelo()
         ,i*1000);
         console.log('amarelo');
     };
-    if(20 > number && number >= 15){
+    if(1 > number && number >= 1){("azul");
+        ordemCores.push("azulJS")
+        setTimeout(piscaAzul()
+        ,i*1000);
+        console.log('azul')
+    };
+    if(2 > number && number >= 2){
+        ordemCores.push("vermelhoJS")
+        setTimeout(piscaAmarelo()
+        ,i*1000);
+        console.log('vermelho');
+    };
+    if(3 > number && number >= 3){
         ordemCores.push("verdeJS")
         setTimeout(piscaVerde()
         ,i*1000);
@@ -87,8 +92,8 @@ const cliqueVerde = function(){
 button.onclick = iniciador;
 
 while(init>=1){
-    if (init=1){
-        aleatorio(0,20);
+    if (init==1){
+        aleatorio(0,3);
         declararCor();
         console.log(aleatorio);
         console.log(declararCor);
@@ -111,7 +116,7 @@ while(init>=1){
     }
     else if(i>=1){
         setTimeout(function(){
-            aleatorio(0,20);
+            aleatorio(0,3);
         },1000);
         declararCor();
         console.log(aleatorio);
